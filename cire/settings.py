@@ -82,7 +82,13 @@ DATABASES = {
     }
 }
 
+# To render data in JSON, you need to change DEFAULT_RENDERER_CLASSES inside your settings.py file:
 
+# REST_FRAMEWORK = {
+#     'DEFAULT_RENDERER_CLASSES': [
+#         'rest_framework.renderers.JSONRenderer',
+#     ],
+# }
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 

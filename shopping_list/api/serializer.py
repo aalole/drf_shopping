@@ -7,3 +7,4 @@ class ShoppiItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = ShoppingItems
         fields = ["id", "name", "purchased"]
+        read_only_fields = ("id",)
